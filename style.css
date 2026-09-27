@@ -1,74 +1,73 @@
 /* Main wrapper that holds the highlighted code block and optional file label. */
 .codeSection {
-font-size:16px;
-padding:0px;
-margin:0px;
+    font-size:16px;
+    padding:0px;
+    margin:0px;
 }
 
 /* File title displayed above the code area. */
 .fileName {
-color:#c586c0;
-margin-bottom:5px;
-font-weight:600;
-letter-spacing:0.03em;
+    color:#c586c0;
+    margin-bottom:5px;
+    font-weight:600;
+    letter-spacing:0.03em;
 }
 
 /* Container styling for the code snippet area. */
 .code {
-line-height:1.6;
-padding:15px;
-overflow:auto;
-color:#e6edf3;
-background-color:#0d1117;
-border-left:5px solid #30363d;
-border-radius:4px;
+    line-height:1.6;
+    padding:15px;
+    overflow:auto;
+    color:#e6edf3;
+    background-color:#0d1117;
+    border-left:5px solid #30363d;
+    border-radius:4px;
 }
 
 /* Preserve whitespace and monospace formatting for the rendered code. */
 pre {
-margin:0px;
-padding:0px;
-font-family:Consolas, "Courier New", monospace;
-white-space:pre;
--moz-tab-size:4;
--o-tab-size:4;
-tab-size:4;
+    margin:0px;
+    padding:0px;
+    font-family:Consolas, "Courier New", monospace;
+    -moz-tab-size:4;
+    -o-tab-size:4;
+    tab-size:4;
 }
 
 /* Line-number text styling. */
 .lI {
-color:#e6edf3;
+    color:#e6edf3;
 }
 
 /* Keyword color for recognized language keywords. */
 .kC {
-color:#ff7b72;
+    color:#ff7b72;
 }
 
 /* Comment color for single-line and block comments. */
 .cC {
-color:#8b949e;
+    color:#8b949e;
 }
 
 /* String literal color for single and double quoted text. */
-.qC {
-color:#a5d6ff;
+.qC { 
+    color:#a5d6ff;
 }
 
 /* Parenthesis styling for grouped expression blocks. */
 .pC {
-color:#c9d1d9;
+    color:#c9d1d9;
 }
 
 .iPC {
-color:#79c0ff;
+    color:#79c0ff;
 }
 
 /* Bracket styling for array or collection access. */
 .bC {
-color:#c9d1d9;
+    color:#c9d1d9;
 }
 
 .iBC {
-color:#79c0ff;
+    color:#79c0ff;
 }
