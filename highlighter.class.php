@@ -191,12 +191,12 @@ class Highlighter {
 				$counter++;
 			}
 			
-			$output = "\n<div class='codeSection'>";
+			$output = "\n<!-- Code Section Start -->\n<div class='codeSection'>";
 			if($this->showFileName == true) {
 				$output .= "\n<div class='fileName'>".$this->fileName."</div>";
 			}
 			$output .= "\n<div class='code'>\n<pre>\n".$content."\n</pre>\n</div>";
-			$output .= "\n</div>\n";
+			$output .= "\n</div>\n<!-- Code Section End -->\n";
 			echo $output;
 		}
 	}
@@ -215,12 +215,12 @@ class Highlighter {
 
 	// Insert a "read more" break in the output.
 	public function break() {
-		echo "\n<!--more-->";
+		echo "\n<!--more-->\n";
 	}
 
 	// Insert a download link for the source code file.
 	public function download($url) {
-		echo "<a class='download-link' href='".$url."' target='_blank'>Download from GitHub</a>";
+		echo "\n<a class='download-link' href='".$url."' target='_blank'>Download from GitHub &#x1F4E5;</a>\n";
 	}
 }
 ?>
